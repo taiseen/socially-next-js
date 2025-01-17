@@ -38,4 +38,8 @@ DATABASE_URL=
 ## Package dependencies:-
 
 - npx create-next-app@14.2.15 .
-- npm install @clerk/nextjs
+- npx shadcn@latest init
+- npx shadcn@latest add button
+- npx shadcn@latest add sheet
+- npm i next-themes
+- npm i @clerk/nextjs
