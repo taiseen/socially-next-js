@@ -43,3 +43,7 @@ DATABASE_URL=
 - npx shadcn@latest add sheet
 - npm i next-themes
 - npm i @clerk/nextjs
+- npm i @prisma/client
+- npm i prisma `-D`
+- npx prisma init
+- npx prisma db push
