@@ -39,8 +39,11 @@ DATABASE_URL=
 
 - npx create-next-app@14.2.15 .
 - npx shadcn@latest init
-- npx shadcn@latest add button
+- npx shadcn@latest add card
 - npx shadcn@latest add sheet
+- npx shadcn@latest add avatar
+- npx shadcn@latest add button
+- npx shadcn@latest add separator
 - npm i next-themes
 - npm i @clerk/nextjs
 - npm i @prisma/client
