@@ -1,6 +1,7 @@
 import { getUserIdFromDB } from "@/actions/user.action";
 import { currentUser } from "@clerk/nextjs/server";
 import CreatePost from "@/components/CreatePost";
+import WhoToFollow from "@/components/follow";
 
 const Home = async () => {
   const dbUserId = await getUserIdFromDB();
@@ -20,7 +21,7 @@ const Home = async () => {
       </div>
 
       <div className="hidden lg:block lg:col-span-4 sticky top-20">
-        WhoToFollow
+        <WhoToFollow />
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ const CreatePost = () => {
     setIsPosting(true);
 
     try {
+      // server side action function call to create a new post...
       const result = await createPost(content, imageUrl);
 
       if (result?.isSuccess) {
