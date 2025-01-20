@@ -1,3 +1,11 @@
+"use server";
+
+// ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+// ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+// ⭕⭕⭕⭕⭕ These functions are run in the server side  ⭕⭕⭕⭕
+// ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+// ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+
 import { getUserIdFromDB } from "./user.action";
 import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
@@ -14,18 +22,7 @@ export async function createPost(content: string, image: string) {
             image,
         }
 
-        console.log({ data });
-
-
-        const post = await prisma.post.create({
-            data: {
-                authorId: userId,
-                content,
-                image,
-            }
-        });
-
-        console.log(post);
+        const post = await prisma.post.create({ data });
 
         revalidatePath("/"); // purge || re-validate the cache for the home page
 
