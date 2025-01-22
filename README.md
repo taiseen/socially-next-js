@@ -45,6 +45,7 @@ DATABASE_URL=
 - npx shadcn@latest add button
 - npx shadcn@latest add textarea
 - npx shadcn@latest add separator
+- npx shadcn@latest add alert-dialog
 - npm i next-themes
 - npm i @clerk/nextjs
 - npm i react-hot-toast
