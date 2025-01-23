@@ -44,8 +44,10 @@ DATABASE_URL=
 - npx shadcn@latest add avatar
 - npx shadcn@latest add button
 - npx shadcn@latest add textarea
+- npx shadcn@latest add skeleton
 - npx shadcn@latest add separator
 - npx shadcn@latest add alert-dialog
+- npx shadcn@latest add scroll-area
 - npm i next-themes
 - npm i @clerk/nextjs
 - npm i react-hot-toast
