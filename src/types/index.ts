@@ -1,3 +1,4 @@
+import { getProfileByUsername, getUserPosts } from "@/actions/profile.action";
 import { getNotifications } from "@/actions/notification.action";
 import { getPosts } from "@/actions/post.action";
 
@@ -15,4 +16,20 @@ export type DeleteAlertDialogProps = {
     description?: string;
     isDeleting: boolean;
     title?: string;
+}
+
+
+type User = Awaited<ReturnType<typeof getProfileByUsername>>;
+type UserPosts = Awaited<ReturnType<typeof getUserPosts>>;
+
+
+export type ProfilePageClientProps = {
+    user: NonNullable<User>;
+    posts: UserPosts;
+    likedPosts: UserPosts;
+    isFollowing: boolean;
+}
+
+export type ProfilePageParamsType = {
+    params: { username: string };
 }

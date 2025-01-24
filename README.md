@@ -39,15 +39,19 @@ DATABASE_URL=
 
 - npx create-next-app@14.2.15 .
 - npx shadcn@latest init
+- npx shadcn@latest add tabs
 - npx shadcn@latest add card
+- npx shadcn@latest add label
+- npx shadcn@latest add input
 - npx shadcn@latest add sheet
 - npx shadcn@latest add avatar
 - npx shadcn@latest add button
-- npx shadcn@latest add textarea
+- npx shadcn@latest add dialog
 - npx shadcn@latest add skeleton
+- npx shadcn@latest add textarea
 - npx shadcn@latest add separator
-- npx shadcn@latest add alert-dialog
 - npx shadcn@latest add scroll-area
+- npx shadcn@latest add alert-dialog
 - npm i next-themes
 - npm i @clerk/nextjs
 - npm i react-hot-toast
