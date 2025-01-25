@@ -13,10 +13,10 @@ yarn dev
 ### Setup `.env` file
 
 ```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-UPLOADING_TOKEN=
-DATABASE_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY =
+UPLOADTHING_TOKEN =
+CLERK_SECRET_KEY = 
+DATABASE_URL =
 ```
 
 ### Highlights:-
@@ -57,5 +57,7 @@ DATABASE_URL=
 - npm i react-hot-toast
 - npm i @prisma/client
 - npm i prisma `-D`
+- npm i @uploadthing/react
+- npm i uploadthing
 - npx prisma init
 - npx prisma db push

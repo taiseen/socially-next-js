@@ -1,5 +1,6 @@
 import { getProfileByUsername, getUserPosts } from "@/actions/profile.action";
 import { getNotifications } from "@/actions/notification.action";
+import { ourFileRouter } from "@/app/api/uploadthing/core";
 import { getPosts } from "@/actions/post.action";
 
 export type LayoutType = { children: React.ReactNode }
@@ -33,3 +34,13 @@ export type ProfilePageClientProps = {
 export type ProfilePageParamsType = {
     params: { username: string };
 }
+
+
+export type ImageUploadProps = {
+    onChange: (url: string) => void;
+    value: string;
+    endpoint: "postImage";
+};
+
+
+export type OurFileRouter = typeof ourFileRouter;
